@@ -1,0 +1,24 @@
+{
+  "name": "crowd-source-question-bank",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aditipolkam/crowd-source-question-bank.git",
+  "private": true,
+  "scripts": {
+    "start": "concurrently --kill-others -p name \"yarn workspace server start\" \"yarn workspace client start\""
+  },
+  "license": "MIT",
+  "contributors": [
+    "Aditi Polkam <aditipolkam@gmail.com> (www.linkedin.com/in/aditipolkam)",
+    "Rohit Patil <rahulhimesh09@gmail.com> (raprocks.ml)",
+    "Harshad Joshi <joshiharshad41@gmail.com> (https://harshadjoshi01.github.io/HarshadIntrosite/)",
+    "Retik Singh <retikpro@gmail.com>"
+  ],
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
